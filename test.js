@@ -1,11 +1,12 @@
-const {promisify} = require('util');
-const fs = require('fs');
-const path = require('path');
-const isWebP = require('is-webp');
-const test = require('ava');
-const m = require('.');
+import {readFile} from 'node:fs/promises';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import isWebP from 'is-webp';
+import test from 'ava';
+import m from './index.js';
 
-const readFile = promisify(fs.readFile);
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 test('convert an image into a WebP', async t => {
 	const buf = await readFile(path.join(__dirname, 'fixtures/test.gif'));

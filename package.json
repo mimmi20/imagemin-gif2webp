@@ -26,10 +26,10 @@
     }
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=20"
   },
   "scripts": {
-    "test": "xo && ava"
+    "test": "ava"
   },
   "files": [
     "index.js"
@@ -46,13 +46,16 @@
     "webp"
   ],
   "dependencies": {
-    "exec-buffer": "^3.0.0",
-    "gif2webp-bin": "^3.0.0",
-    "is-gif": "^3.0.0"
+    "exec-buffer": "github:mimmi20/exec-buffer#master",
+    "gif2webp-bin": "github:mimmi20/gif2webp-bin#main",
+    "is-gif": "^4.0.1",
+    "uint8array-extras": "^1.1.0"
   },
   "devDependencies": {
-    "ava": "^3.8.0",
-    "is-webp": "^1.0.0",
-    "xo": "^0.30.0"
-  }
+    "ava": "^6.4.0",
+    "is-webp": "^2.0.0",
+    "xo": "^1.1.0"
+  },
+  "type": "module",
+  "exports": "./index.js"
 }
