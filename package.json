@@ -47,7 +47,7 @@
   ],
   "dependencies": {
     "exec-buffer": "github:mimmi20/exec-buffer#master",
-    "gif2webp-bin": "github:mimmi20/gif2webp-bin#main",
+    "gif2webp-bin": "github:mimmi20/gif2webp-bin#master",
     "is-gif": "^4.0.1",
     "uint8array-extras": "^1.4.0"
   },
