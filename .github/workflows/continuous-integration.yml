@@ -44,6 +44,7 @@ jobs:
       composer-options: "--optimize-autoloader --prefer-dist --prefer-stable -v"
       skip-php-install: true
       skip-npm-install: false
+      skip-libgif-install: false
 
   analytics:
     name: "Project Analysis"
