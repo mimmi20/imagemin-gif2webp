@@ -4,8 +4,8 @@
 
 ## Install
 
-```
-$ npm install --save imagemin-gif2webp
+```shell
+npm install --save imagemin-gif2webp
 ```
 
 ## Usage
@@ -15,14 +15,14 @@ const imagemin = require('imagemin');
 const imageminGif2webp = require('imagemin-gif2webp');
 
 (async () => {
-	await imagemin(['images/*.gif'], {
-		destination: 'build/images',
-		plugins: [
-			imageminGif2webp({quality: 50})
-		]
-	});
+  await imagemin(['images/*.gif'], {
+    destination: 'build/images',
+    plugins: [
+      imageminGif2webp({quality: 50})
+    ]
+  });
 
-	console.log('Images optimized');
+  console.log('Images optimized');
 })();
 ```
 
